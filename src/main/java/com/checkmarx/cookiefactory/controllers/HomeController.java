@@ -10,11 +10,6 @@ import javax.servlet.http.HttpServletRequest;
 @Slf4j
 public class HomeController {
 
-    @RequestMapping("/home")
-    public String bankStorageIndex() {
-        return "Welcome to Cookie Factory";
-    }
-
     @RequestMapping("/")
     public String showWelcomePage() {
         return "Welcome to Cookie Factory";
