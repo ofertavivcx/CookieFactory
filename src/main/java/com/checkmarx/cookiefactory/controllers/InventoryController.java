@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 @Slf4j
 public class InventoryController {
 
-    @RequestMapping(path = "/ImmediateOrder", method = RequestMethod.GET)
+    @RequestMapping(path = "/immediateOrder", method = RequestMethod.GET)
     @ResponseBody
     public String getImmediateOrderCookies(@RequestParam("amount") int amount) {
         log.info("Cookie inventory got immediate order for {} cookies", amount);
